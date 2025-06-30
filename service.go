@@ -27,11 +27,11 @@ const (
 	Organization                 = "AbstractMacines"
 	emailAddress                 = "info@abstractmachines.rs"
 	PrivateKeyBytes              = 2048
-	RootCAValidityPeriod         = time.Hour * 24 * 365 // 365 days
-	IntermediateCAVAlidityPeriod = time.Hour * 24 * 90  // 90 days
-	certValidityPeriod           = time.Hour * 24 * 30  // 30 days
-	rCertExpiryThreshold         = time.Hour * 24 * 30  // 30 days
-	iCertExpiryThreshold         = time.Hour * 24 * 10  // 10 days
+	RootCAValidityPeriod         = time.Hour * 24 * 365 * 15 // 15 years
+	IntermediateCAVAlidityPeriod = time.Hour * 24 * 365 * 10 // 10 days
+	certValidityPeriod           = time.Hour * 24 * 365      // 1 year
+	rCertExpiryThreshold         = time.Hour * 24 * 365 / 2  // 6 months
+	iCertExpiryThreshold         = time.Hour * 24 * 90       // 3 months
 	downloadTokenExpiry          = time.Minute * 5
 	PrivateKey                   = "PRIVATE KEY"
 	RSAPrivateKey                = "RSA PRIVATE KEY"
